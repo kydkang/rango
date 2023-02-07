@@ -5,7 +5,9 @@ from rango.forms import CategoryForm, PageForm
 from django.shortcuts import redirect 
 from rango.models import Category, Page
 
-def about(request): 
+def about(request):
+    print(request.method)
+    print(request.user) 
     return render(request, 'rango/about.html', context={})
 
 def index(request):
