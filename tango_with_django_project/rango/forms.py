@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 from rango.models import UserProfile
 
 class CategoryForm(forms.ModelForm):
-    name = forms.CharField(max_length=128, help_text="Please enter the category name.")
+    name = forms.CharField(max_length=128, help_text='Please enter the category name.')
 
     class Meta:
         model = Category
